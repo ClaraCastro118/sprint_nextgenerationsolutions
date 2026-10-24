@@ -1,0 +1,56 @@
+{
+  "_aviso": "Catálogo SINTÉTICO de demonstração. Nenhum produto é real.",
+  "atualizado_em": "2026-10-20",
+  "produtos": [
+    {
+      "id": "SKU-EX-001",
+      "nome": "Linha Exemplo Cuidado Diário",
+      "categoria": "cuidado_pessoal",
+      "descricao": "Linha fictícia de produtos de cuidado diário.",
+      "preco_referencia": 49.90,
+      "preco_promocional": 39.90,
+      "validade_oferta": "2026-12-31",
+      "canais_permitidos": ["feed_social", "story", "banner_web"],
+      "restricoes": "Sem promessas de resultado terapêutico.",
+      "origem": "catalogo_sintetico_demo_v1"
+    },
+    {
+      "id": "SKU-EX-002",
+      "nome": "Kit Exemplo Bem-estar",
+      "categoria": "bem_estar",
+      "descricao": "Kit fictício com itens de bem-estar.",
+      "preco_referencia": 89.90,
+      "preco_promocional": null,
+      "validade_oferta": null,
+      "canais_permitidos": ["feed_social", "banner_web"],
+      "restricoes": "Não alegar benefícios clínicos.",
+      "origem": "catalogo_sintetico_demo_v1"
+    },
+    {
+      "id": "SKU-EX-003",
+      "nome": "Hidratante Facial (OFERTA VENCIDA)",
+      "categoria": "cuidado_facial",
+      "descricao": "Hidratante facial fictício. Este produto simula uma oferta vencida.",
+      "preco_referencia": 29.90,
+      "preco_promocional": 24.90,
+      "validade_oferta": "2025-01-01",
+      "canais_permitidos": ["feed_social", "story"],
+      "restricoes": "Demonstração: oferta vencida.",
+      "origem": "catalogo_sintetico_demo_v1"
+    },
+    {
+      "id": "SKU-EX-004",
+      "nome": "Analgésico Exemplo 500mg (fictício)",
+      "categoria": "medicamento_isento",
+      "descricao": "Analgésico fictício de demonstração.",
+      "preco_referencia": 12.90,
+      "preco_promocional": 9.90,
+      "validade_oferta": "2026-12-31",
+      "canais_permitidos": ["feed_social", "banner_web"],
+      "restricoes": "Produto com regras especiais. Obrigatório disclaimer.",
+      "origem": "catalogo_sintetico_demo_v1",
+      "requer_revisao_especial": true,
+      "disclaimer_obrigatorio": "AO PERSISTIREM OS SINTOMAS, O MÉDICO DEVERÁ SER CONSULTADO."
+    }
+  ]
+}

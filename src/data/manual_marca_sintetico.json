@@ -1,0 +1,35 @@
+{
+  "versao": "0.3-exemplo",
+  "marca": "Marca Exemplo (fictícia)",
+  "_aviso": "DADOS DE EXEMPLO.",
+  "tom_de_voz": {
+    "descricao": "Acolhedor, claro e próximo; linguagem simples; sem pressão de venda e sem promessas exageradas.",
+    "tratamento": "você",
+    "evitar": ["urgência artificial", "caixa alta contínua", "promessas absolutas"]
+  },
+  "paleta": [
+    {"nome": "azul principal", "hex": "#0B5FA5"},
+    {"nome": "vermelho", "hex": "#D32F2F"},
+    {"nome": "branco", "hex": "#FFFFFF"},
+    {"nome": "amarelo", "hex": "#F2A900"}
+  ],
+  "termos_proibidos": ["garantido", "100% grátis", "milagre", "cura", "sem risco"],
+  "limite_emojis": 2,
+  "formatos": {
+    "feed_social": {"descricao": "Post de feed", "limites": {"titulo": 60, "texto": 220, "cta": 25}},
+    "story":       {"descricao": "Story vertical", "limites": {"titulo": 40, "texto": 100, "cta": 20}},
+    "banner_web":  {"descricao": "Banner horizontal", "limites": {"titulo": 40, "texto": 90,  "cta": 20}}
+  },
+  "regras": [
+    {"id": "G-01", "descricao": "Não usar termos proibidos", "tipo": "obrigatoria", "verificacao": "termos_proibidos"},
+    {"id": "G-02", "descricao": "Respeitar limites de caracteres", "tipo": "obrigatoria", "verificacao": "limites_formato"},
+    {"id": "G-03", "descricao": "Respeitar limite de emojis", "tipo": "obrigatoria", "verificacao": "limite_emojis"},
+    {"id": "G-04", "descricao": "Título, texto e CTA presentes", "tipo": "obrigatoria", "verificacao": "cta_presente"},
+    {"id": "G-05", "descricao": "Tom de voz adequado", "tipo": "avaliada_ia", "verificacao": "tom_ia"},
+    {"id": "G-06", "descricao": "Produto existe no catálogo", "tipo": "obrigatoria", "verificacao": "produto_catalogo"},
+    {"id": "G-07", "descricao": "Preço no texto condiz com o catálogo", "tipo": "obrigatoria", "verificacao": "preco_catalogo"},
+    {"id": "G-08", "descricao": "Oferta não vencida", "tipo": "obrigatoria", "verificacao": "validade_oferta"},
+    {"id": "G-09", "descricao": "Canal permitido", "tipo": "obrigatoria", "verificacao": "canal_permitido"},
+    {"id": "G-10", "descricao": "Disclaimer obrigatório (ANVISA)", "tipo": "obrigatoria", "verificacao": "disclaimer_obrigatorio"}
+  ]
+}

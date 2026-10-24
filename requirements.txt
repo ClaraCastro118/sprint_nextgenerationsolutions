@@ -1,0 +1,4 @@
+# Interface
+streamlit>=1.30
+# Modelo de IA real (opcional: o modo simulado não precisa)
+anthropic>=0.30
