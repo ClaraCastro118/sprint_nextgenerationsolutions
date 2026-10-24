@@ -1,8 +1,5 @@
 # Product Backlog (ordem sugerida — ordenação final é do Product Owner)
 
-> Também deve ser espelhado em GitHub Issues/Projects (ver `setup-github.md`).
-> "Hipótese" = não sustentado diretamente pelo enunciado; validar antes de comprometer.
-
 ## Visão geral da ordem sugerida
 
 | # | ID | História | Prioridade sugerida |
